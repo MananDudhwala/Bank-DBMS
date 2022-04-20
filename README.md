@@ -26,6 +26,10 @@ Withdraw:
 Updated Account Page:
 <img width="907" alt="image" src="https://user-images.githubusercontent.com/43292298/164180343-ea338434-77bc-4b3a-bd69-fdebaf76e9bf.png">
 
+Database:
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/43292298/164180972-6007d0af-d395-4364-bd64-56b4fdcc2a14.png">
+
+
 
 
 
