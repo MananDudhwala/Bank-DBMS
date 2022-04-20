@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+    <div class="container mt-5">
+        <h1>Deposit</h1>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        <!-- Makes POST request to /register route -->
+                        <form action="/daccount" method="POST">
+                            <div class="form-group">
+                                <label for="balance"><%=user.name%> Add desired amount</label>
+                                <input type="number" class="form-control" name="amt">
+                                <input type="hidden" name="email" value= <%=user.email%> >
+                            </div>
+                            <button type="submit" class="btn btn-dark">Deposit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <%- include('partials/header') %>

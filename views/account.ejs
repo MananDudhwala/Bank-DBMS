@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">Hello <%=user.name%></h1>
+            <p> Your current bank balance is ₹ <%=user.balance%></p>
+
+                    <hr>
+                    <form method="POST" action="/account">
+                        <input type="hidden" name="email" value= <%=user.email%> >
+                        <button type="submit" class="btn btn-dark btn-lg">Deposit</button>
+                    </form>
+                    <hr>
+            
+                    <form method="POST" action="/withdraw">
+                        <input type="hidden" name="email" value= <%=user.email%> >
+                        <button type="submit" class="btn btn-dark btn-lg">Withdraw</button>
+                    </form>
+                    <hr>
+                    
+                    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+                    
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
